@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    ch:
+      service-id: consumer-hello
+      path: '/consumer/hello/**'
+    c:
+      service-id: consumer
+      path: '/consumer/**'
+
+      #yml底层是Linkedhashmap，无序的
